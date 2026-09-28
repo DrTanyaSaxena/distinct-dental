@@ -1,0 +1,103 @@
+/* =========================================================
+   DISTINCT DENTAL — HOME PAGE
+   ========================================================= */
+
+.home-page {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  overflow-x: clip;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.home-page main {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  overflow-x: clip;
+}
+
+
+/* =========================================================
+   DESKTOP
+   >= 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .home-page {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+
+  .home-page main {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .home-page {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+
+  .home-page main {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .home-page {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+
+  .home-page main {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: clip;
+  }
+}

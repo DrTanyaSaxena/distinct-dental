@@ -1,0 +1,139 @@
+/* =========================================================
+   DISTINCT DENTAL — SHARED BUTTON
+   ========================================================= */
+
+.button {
+  display: inline-flex;
+
+  height: 40px;
+
+  padding: 0 24px;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 4px;
+
+  box-sizing: border-box;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 120ms ease;
+}
+
+
+/* =========================================================
+   ICONS
+   ========================================================= */
+
+.button > img,
+.button > svg {
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   PRIMARY
+   ========================================================= */
+
+.button--primary {
+  background: #123f35;
+
+  border-color: #123f35;
+
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background: #1b5144;
+
+  border-color: #1b5144;
+}
+
+.button--primary:active {
+  background: #0b2923;
+
+  border-color: #0b2923;
+
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   SECONDARY
+   ========================================================= */
+
+.button--secondary {
+  background: #f2f6f4;
+
+  border-color: #123f35;
+
+  color: #123f35;
+}
+
+.button--secondary:hover {
+  background: #f2f6f4;
+
+  border-color: #1b5144;
+}
+
+.button--secondary:active {
+  background: #eaf2ef;
+
+  border-color: #0b2923;
+
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.button:focus-visible {
+  outline: 2px solid #a8c3ba;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.button:disabled,
+.button[aria-disabled="true"] {
+  background: #bec2c0;
+
+  border-color: #bec2c0;
+
+  color: #ffffff;
+
+  cursor: not-allowed;
+  pointer-events: none;
+
+  transform: none;
+}

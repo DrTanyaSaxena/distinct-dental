@@ -1,0 +1,712 @@
+/* =========================================================
+   DISTINCT DENTAL — TREATMENT PAGE
+   ========================================================= */
+
+.treatment-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  overflow-x: clip;
+}
+
+
+.treatment-page__main {
+  width: 100%;
+}
+
+
+/* =========================================================
+   HERO — LOCKED
+   ========================================================= */
+
+.treatment-hero {
+  position: relative;
+
+  width: 100%;
+  height: 478px;
+
+  overflow: hidden;
+
+  background: #fcfbf8;
+
+  isolation: isolate;
+}
+
+
+.treatment-hero__image {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  width: 758px;
+  height: 478px;
+
+  object-fit: cover;
+  object-position: left center;
+
+  z-index: 1;
+}
+
+
+.treatment-hero__tablet-image {
+  display: none;
+}
+
+
+.treatment-hero__mobile-image {
+  display: none;
+}
+
+
+.treatment-hero__gradient {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 1143px;
+  height: 478px;
+
+  background: linear-gradient(
+    90deg,
+    #fcfbf8 59.6154%,
+    rgba(255, 255, 255, 0) 90.8654%
+  );
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+.treatment-hero__mobile-gradient {
+  display: none;
+}
+
+
+.treatment-hero__container {
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+
+  width: 100%;
+  max-width: 1440px;
+  height: 478px;
+
+  margin-inline: auto;
+
+  padding: 72px 80px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+.treatment-hero__content {
+  position: relative;
+
+  z-index: 4;
+
+  display: flex;
+
+  width: 519px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+
+.treatment-hero__eyebrow {
+  display: block;
+
+  color: #a67c3d;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.treatment-hero__title {
+  width: 100%;
+
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+.treatment-hero__title--desktop {
+  display: block;
+
+  font-size: 64px;
+  line-height: 68px;
+
+  letter-spacing: -1.25px;
+}
+
+
+.treatment-hero__title--mobile {
+  display: none;
+}
+
+
+.treatment-hero__description {
+  width: 519px;
+
+  margin: 0;
+
+  color: #171a19;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+/* =========================================================
+   TREATMENT LIST
+   ========================================================= */
+
+.treatment-list {
+  width: 100%;
+
+  padding: 80px 0 96px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+.treatment-list__container {
+  width: 1280px;
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  box-sizing: border-box;
+}
+
+
+.treatment-list__grid {
+  display: grid;
+
+  width: 100%;
+
+  grid-template-columns:
+    repeat(4, 302px);
+
+  column-gap: 24px;
+  row-gap: 24px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   DESKTOP — LOCKED
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  .treatment-hero {
+    height: 478px;
+  }
+
+
+  .treatment-hero__image {
+    width: 758px;
+    height: 478px;
+
+    object-fit: cover;
+    object-position: left center;
+  }
+
+
+  .treatment-hero__gradient {
+    width: 1143px;
+    height: 478px;
+
+    background: linear-gradient(
+      90deg,
+      #fcfbf8 59.6154%,
+      rgba(255, 255, 255, 0) 90.8654%
+    );
+  }
+
+
+  .treatment-hero__container {
+    width: 100%;
+    max-width: 1440px;
+
+    height: 478px;
+
+    padding: 72px 80px;
+  }
+
+
+  .treatment-list__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+
+  .treatment-list__grid {
+    grid-template-columns:
+      repeat(4, 302px);
+
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+}
+
+
+@media (min-width: 1600px) {
+
+  .treatment-hero {
+    height: 478px;
+  }
+
+
+  .treatment-hero__image {
+    width: 920px;
+    height: 478px;
+
+    object-fit: cover;
+    object-position: left center;
+  }
+
+
+  .treatment-hero__gradient {
+    width: 1328px;
+    height: 478px;
+
+    background: linear-gradient(
+      90deg,
+      #fcfbf8 62.4823%,
+      rgba(255, 255, 255, 0) 77.8846%
+    );
+  }
+
+
+  .treatment-hero__container {
+    width: 1280px;
+    max-width: 1280px;
+
+    height: 478px;
+
+    padding: 72px 0;
+  }
+
+
+  .treatment-list__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+
+  .treatment-list__grid {
+    grid-template-columns:
+      repeat(4, 302px);
+
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+}
+
+
+@media (min-width: 1729px) {
+
+  .treatment-hero__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+
+  .treatment-list__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   TABLET — LOCKED
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .treatment-hero {
+    width: 100%;
+    height: 432px;
+
+    background: #fcfbf8;
+  }
+
+
+  .treatment-hero__image {
+    display: none;
+  }
+
+
+  .treatment-hero__tablet-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 540px;
+    height: 432px;
+
+    overflow: hidden;
+
+    z-index: 1;
+  }
+
+
+  .treatment-hero__tablet-image img {
+    display: block;
+
+    width: 540px;
+    height: 432px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  .treatment-hero__gradient {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 687px;
+    height: 432px;
+
+    background: linear-gradient(
+      90deg,
+      #fcfbf8 0%,
+      #fcfbf8 57%,
+      rgba(252, 251, 248, 0.97) 64%,
+      rgba(252, 251, 248, 0.82) 70%,
+      rgba(252, 251, 248, 0.58) 77%,
+      rgba(252, 251, 248, 0.30) 85%,
+      rgba(252, 251, 248, 0) 100%
+    );
+
+    z-index: 2;
+
+    pointer-events: none;
+  }
+
+
+  .treatment-hero__container {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    width: 100%;
+    max-width: 834px;
+    height: 432px;
+
+    margin-inline: auto;
+
+    padding: 48px;
+
+    align-items: center;
+
+    box-sizing: border-box;
+  }
+
+
+  .treatment-hero__content {
+    z-index: 4;
+
+    width: 440px;
+
+    gap: 20px;
+  }
+
+
+  .treatment-hero__title--desktop {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+
+  .treatment-hero__title--mobile {
+    display: none;
+  }
+
+
+  .treatment-hero__description {
+    width: 100%;
+    max-width: 430px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  .treatment-list {
+    width: 100%;
+
+    padding:
+      64px
+      48px
+      72px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+  }
+
+
+  .treatment-list__container {
+    width: 100%;
+    max-width: 738px;
+
+    margin-inline: auto;
+  }
+
+
+  .treatment-list__grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    column-gap: 24px;
+    row-gap: 24px;
+
+    align-items: start;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* -------------------------------------------------------
+     HERO — LOCKED
+     ------------------------------------------------------- */
+
+  .treatment-hero {
+    position: relative;
+
+    width: 100%;
+    height: 640px;
+    min-height: 640px;
+
+    overflow: hidden;
+
+    background: #fcfbf8;
+
+    isolation: isolate;
+  }
+
+
+  .treatment-hero__image,
+  .treatment-hero__tablet-image {
+    display: none;
+  }
+
+
+  .treatment-hero__mobile-image {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 432px;
+
+    overflow: hidden;
+
+    z-index: 1;
+  }
+
+
+  .treatment-hero__mobile-image img {
+    display: block;
+
+    width: 100%;
+    height: 432px;
+
+    object-fit: cover;
+
+    object-position: center center;
+  }
+
+
+  .treatment-hero__gradient {
+    display: none;
+  }
+
+
+  .treatment-hero__mobile-gradient {
+    position: absolute;
+
+    top: 140px;
+    left: 50%;
+
+    display: block;
+
+    width: 440px;
+    height: 500px;
+
+    transform: translateX(-50%);
+
+    background:
+      linear-gradient(
+        to top,
+        #fcfbf8 59.6154%,
+        rgba(255, 255, 255, 0) 90.8654%
+      );
+
+    z-index: 2;
+
+    pointer-events: none;
+  }
+
+
+  .treatment-hero__container {
+    position: relative;
+
+    z-index: 3;
+
+    display: block;
+
+    width: 100%;
+    max-width: 440px;
+    height: 640px;
+
+    margin-inline: auto;
+
+    padding: 0 24px;
+
+    box-sizing: border-box;
+  }
+
+
+  .treatment-hero__content {
+    position: absolute;
+
+    top: 372px;
+
+    left: 24px;
+    right: 24px;
+
+    width: auto;
+
+    z-index: 4;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 16px;
+  }
+
+
+  .treatment-hero__title--desktop {
+    display: none;
+  }
+
+
+  .treatment-hero__title--mobile {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 40px;
+    line-height: 47px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  .treatment-hero__description {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE TREATMENT LIST
+     ------------------------------------------------------- */
+
+  .treatment-list {
+    width: 100%;
+
+    padding:
+      48px
+      24px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+  }
+
+
+  .treatment-list__container {
+    width: 100%;
+    max-width: 392px;
+
+    margin-inline: auto;
+  }
+
+
+  .treatment-list__grid {
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    column-gap: 0;
+    row-gap: 24px;
+
+    align-items: start;
+  }
+}

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Instrument+Sans:wght@400;500;600&display=swap");
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: var(--background-primary);
+  color: var(--text-primary);
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-400);
+  font-weight: var(--font-weight-body);
+  line-height: var(--font-line-height-400);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY RESET
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-heading);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   FORM RESET
+   ========================================================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background: none;
+
+  color: inherit;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MEDIA
+   ========================================================= */
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+
+/* =========================================================
+   DEFAULT CONTENT CONTAINER
+   ========================================================= */
+
+.content-container {
+  width: min(100%, 1280px);
+
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--border-brand);
+  outline-offset: 3px;
+}

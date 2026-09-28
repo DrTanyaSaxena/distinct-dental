@@ -1,0 +1,49 @@
+/* =========================================================
+   DISTINCT DENTAL — TAG
+   ========================================================= */
+
+.tag {
+  display: inline-flex;
+
+  padding: 8px 12px;
+
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border-radius: 8px;
+
+  /* Distinct Dental / Body / Small / Alt */
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+
+  letter-spacing: 0;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   GREEN TAG
+   ========================================================= */
+
+.tag--green {
+  background: #286557;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   WARM TAG
+   ========================================================= */
+
+.tag--warm {
+  background: #d8c6a8;
+
+  color: #171a19;
+}

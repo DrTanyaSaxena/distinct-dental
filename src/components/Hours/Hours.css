@@ -1,0 +1,893 @@
+/* =========================================================
+   DISTINCT DENTAL — CLINIC HOURS
+   ========================================================= */
+
+.hours {
+  width: 100%;
+
+  padding: 96px 0;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.hours__container {
+  display: flex;
+
+  width: 1280px;
+  max-width: 1280px;
+  height: 628px;
+
+  margin-inline: auto;
+
+  align-items: center;
+
+  gap: 48px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #faf8f3;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.hours__image {
+  width: 628px;
+  height: 628px;
+
+  flex: 0 0 628px;
+
+  overflow: hidden;
+}
+
+
+.hours__image picture {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.hours__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.hours__content {
+  display: flex;
+
+  flex: 1 1 0;
+
+  min-width: 0;
+  height: 100%;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 24px;
+
+  padding-right: 48px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.hours__heading {
+  display: flex;
+
+  width: 334px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.hours__eyebrow {
+  align-self: stretch;
+
+  color: #a67c3d;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.hours__title {
+  align-self: stretch;
+
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.hours__details {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  align-self: stretch;
+}
+
+
+/* =========================================================
+   DETAIL BLOCK
+   ========================================================= */
+
+.hours__block {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  align-self: stretch;
+}
+
+
+.hours__block--address {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   BLOCK HEADING
+   ========================================================= */
+
+.hours__block-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   INLINE ICONS
+
+   These replace the missing image assets and therefore
+   render on desktop, tablet and mobile.
+   ========================================================= */
+
+.hours__inline-icon {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  flex: 0 0 20px;
+
+  color: #123f35;
+}
+
+
+/* =========================================================
+   HOURS LIST
+   ========================================================= */
+
+.hours__list {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  align-self: stretch;
+}
+
+
+/* =========================================================
+   HOURS ROW
+   ========================================================= */
+
+.hours__row {
+  display: grid;
+
+  width: 100%;
+
+  grid-template-columns:
+    88px
+    160px
+    1fr;
+
+  align-items: center;
+
+  column-gap: 24px;
+
+  color: #171a19;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+.hours__day {
+  width: 88px;
+
+  white-space: nowrap;
+}
+
+
+.hours__times {
+  display: contents;
+}
+
+
+.hours__times > span {
+  white-space: nowrap;
+}
+
+
+.hours__row--closed {
+  color: #505653;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   ADDRESS
+   ========================================================= */
+
+.hours__address {
+  width: 100%;
+
+  margin: 0;
+
+  color: #171a19;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.hours__actions {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   BUTTON ICONS
+   ========================================================= */
+
+.hours__button-icon {
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+
+  color: currentColor;
+}
+
+
+/* =========================================================
+   DESKTOP
+   >= 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .hours__container {
+    width: 1280px;
+    max-width: 1280px;
+
+    height: 628px;
+
+    gap: 48px;
+  }
+
+
+  .hours__image {
+    width: 628px;
+    height: 628px;
+
+    flex: 0 0 628px;
+  }
+
+
+  .hours__content {
+    padding-right: 48px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   Image:
+   /images/Hours tab.jpg
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .hours {
+    width: 100%;
+
+    padding:
+      64px
+      48px
+      72px;
+
+    box-sizing: border-box;
+  }
+
+
+  .hours__container {
+    display: flex;
+
+    width: 100%;
+    max-width: 738px;
+    height: auto;
+
+    margin-inline: auto;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    border-radius: 16px;
+  }
+
+
+  .hours__image {
+    width: 100%;
+    height: auto;
+
+    flex: none;
+  }
+
+
+  .hours__image picture {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+
+  .hours__image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 738 / 373;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  .hours__content {
+    width: 100%;
+    height: auto;
+
+    flex: none;
+
+    padding:
+      32px
+      36px
+      36px;
+
+    box-sizing: border-box;
+
+    gap: 28px;
+
+    justify-content: flex-start;
+  }
+
+
+  .hours__heading {
+    width: 100%;
+
+    gap: 8px;
+  }
+
+
+  .hours__eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+  .hours__title {
+    font-size: 36px;
+    line-height: 43px;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .hours__details {
+    gap: 24px;
+  }
+
+
+  .hours__block {
+    gap: 8px;
+  }
+
+
+  .hours__block-heading {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  .hours__inline-icon {
+    width: 18px;
+    height: 18px;
+
+    flex-basis: 18px;
+  }
+
+
+  .hours__list {
+    gap: 6px;
+  }
+
+
+  .hours__row {
+    grid-template-columns:
+      80px
+      minmax(0, 1fr);
+
+    column-gap: 16px;
+
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .hours__day {
+    width: 80px;
+  }
+
+
+  .hours__times {
+    display: flex;
+
+    min-width: 0;
+
+    flex-wrap: wrap;
+
+    gap: 0 16px;
+  }
+
+
+  .hours__times > span {
+    white-space: nowrap;
+  }
+
+
+  .hours__address {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+
+  .hours__actions {
+    gap: 12px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   Image:
+   /images/hours mob img.jpg
+
+   Dedicated mobile image; natural ratio, no artificial
+   crop.
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .hours {
+    width: 100%;
+
+    padding:
+      48px
+      24px
+      48px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+  }
+
+
+  /* -------------------------------------------------------
+     CARD
+     ------------------------------------------------------- */
+
+  .hours__container {
+    display: flex;
+
+    width: 100%;
+    max-width: 392px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    background: #faf8f3;
+  }
+
+
+  /* -------------------------------------------------------
+     IMAGE
+     ------------------------------------------------------- */
+
+  .hours__image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    flex: none;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .hours__image picture {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+
+  .hours__image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    object-fit: contain;
+
+    object-position: center;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
+     ------------------------------------------------------- */
+
+  .hours__content {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    padding:
+      24px
+      16px
+      24px;
+
+    box-sizing: border-box;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    gap: 20px;
+
+    background: #faf8f3;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADING
+     ------------------------------------------------------- */
+
+  .hours__heading {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+
+  .hours__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .hours__title {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    letter-spacing: -0.35px;
+  }
+
+
+  /* -------------------------------------------------------
+     DETAILS
+     ------------------------------------------------------- */
+
+  .hours__details {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+
+  .hours__block {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADINGS
+     ------------------------------------------------------- */
+
+  .hours__block-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  .hours__inline-icon {
+    width: 18px;
+    height: 18px;
+
+    flex: 0 0 18px;
+  }
+
+
+  /* -------------------------------------------------------
+     HOURS LIST
+     ------------------------------------------------------- */
+
+  .hours__list {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+
+  .hours__row {
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns:
+      64px
+      minmax(0, 1fr);
+
+    column-gap: 12px;
+
+    align-items: start;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+
+  .hours__day {
+    width: 64px;
+  }
+
+
+  .hours__times {
+    display: flex;
+
+    min-width: 0;
+
+    flex-wrap: wrap;
+
+    gap: 0 12px;
+  }
+
+
+  .hours__times > span {
+    white-space: nowrap;
+  }
+
+
+  .hours__row--closed {
+    font-weight: 600;
+  }
+
+
+  /* -------------------------------------------------------
+     ADDRESS
+     ------------------------------------------------------- */
+
+  .hours__block--address {
+    margin-top: 0;
+  }
+
+
+  .hours__address {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+
+  /* -------------------------------------------------------
+     ACTIONS
+     ------------------------------------------------------- */
+
+  .hours__actions {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 8px;
+  }
+
+
+  .hours__actions .button {
+    width: 100%;
+
+    flex: 0 0 auto;
+  }
+
+
+  .hours__button-icon {
+    width: 16px;
+    height: 16px;
+
+    flex-basis: 16px;
+  }
+}

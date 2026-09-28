@@ -1,0 +1,106 @@
+/* =========================================================
+   DISTINCT DENTAL — ICON BUTTON
+   ========================================================= */
+
+.icon-button {
+  display: inline-flex;
+
+  width: 50px;
+  height: 48px;
+
+  padding: 0 12px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  flex: 0 0 50px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #123f35;
+  border-radius: 8px;
+
+  background: #f2f6f4;
+
+  color: #123f35;
+
+  cursor: pointer;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 120ms ease;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.icon-button > img,
+.icon-button > svg {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  flex: 0 0 20px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.icon-button:hover {
+  background: #ffffff;
+
+  border-color: #1b5144;
+}
+
+
+/* =========================================================
+   PRESSED
+   ========================================================= */
+
+.icon-button:active {
+  background: #eaf2ef;
+
+  border-color: #0b2923;
+
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.icon-button:focus-visible {
+  outline: 2px solid #a8c3ba;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   DISABLED
+   ========================================================= */
+
+.icon-button:disabled,
+.icon-button[aria-disabled="true"] {
+  background: #bec2c0;
+
+  border-color: #bec2c0;
+
+  color: #ffffff;
+
+  cursor: not-allowed;
+  pointer-events: none;
+
+  transform: none;
+}

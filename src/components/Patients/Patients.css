@@ -1,0 +1,790 @@
+/* =========================================================
+   DISTINCT DENTAL — PATIENTS
+   ========================================================= */
+
+.patients {
+  width: 100%;
+
+  padding: 96px 0;
+
+  background: #faf8f3;
+
+  border-radius: 24px 24px 0 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.patients__container {
+  width: 1280px;
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.patients__heading {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 48px;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.patients__eyebrow {
+  display: block;
+
+  color: #a67c3d;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.patients__title {
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.patients__description {
+  width: 520px;
+
+  margin: 12px 0 0;
+
+  color: #171a19;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   VIEWPORT
+   ========================================================= */
+
+.patients__viewport {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   DESKTOP EDGE FADE
+   LOCKED
+   ========================================================= */
+
+.patients__viewport::before,
+.patients__viewport::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 96px;
+
+  z-index: 10;
+
+  pointer-events: none;
+}
+
+
+.patients__viewport::before {
+  left: 0;
+
+  background: linear-gradient(
+    90deg,
+    #faf8f3 0%,
+    rgba(250, 248, 243, 0.92) 18%,
+    rgba(250, 248, 243, 0.55) 48%,
+    rgba(250, 248, 243, 0) 100%
+  );
+}
+
+
+.patients__viewport::after {
+  right: 0;
+
+  background: linear-gradient(
+    270deg,
+    #faf8f3 0%,
+    rgba(250, 248, 243, 0.92) 18%,
+    rgba(250, 248, 243, 0.55) 48%,
+    rgba(250, 248, 243, 0) 100%
+  );
+}
+
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.patients__track {
+  display: flex;
+
+  width: max-content;
+
+  gap: 24px;
+
+  animation:
+    patients-marquee
+    54s
+    linear
+    infinite;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   PATIENT CARD — DESKTOP
+   LOCKED
+   ========================================================= */
+
+.patient-case {
+  display: flex;
+
+  width: 440px;
+  height: 648px;
+
+  flex: 0 0 440px;
+
+  padding: 16px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 16px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #bec2c0;
+  border-radius: 16px;
+
+  background: #f2ebdf;
+}
+
+
+/* =========================================================
+   TITLES
+   ========================================================= */
+
+.patient-case__title {
+  display: block;
+
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+
+  letter-spacing: 0;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+
+.patient-case__title--desktop {
+  width: 408px;
+  min-height: 26px;
+
+  display: block;
+}
+
+
+.patient-case__title--tablet {
+  display: none;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.patient-case__image {
+  position: relative;
+
+  width: 408px;
+  height: 274px;
+
+  flex: 0 0 274px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+
+.patient-case__image picture {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.patient-case__image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   TAG
+   ========================================================= */
+
+.patient-case__tag {
+  position: absolute;
+
+  right: 8px;
+  bottom: 8px;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   DESKTOP ANIMATION
+   LOCKED
+   ========================================================= */
+
+@keyframes patients-marquee {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-2760px);
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .patients__track {
+    animation: none;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP — 1200px to 1599px
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  .patients__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP — 1600px+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+  .patients__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   Reference:
+   viewport = 834px
+   side inset = 48px
+   text -> carousel = 24px
+   card width = 318px
+   card gap = 24px
+   image = 286 × 194px
+   soft edge fade = 96px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* -------------------------------------------------------
+     SECTION
+     ------------------------------------------------------- */
+
+  .patients {
+    width: 100%;
+
+    padding:
+      64px
+      0
+      48px;
+
+    background: #faf8f3;
+
+    border-radius: 24px 24px 0 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTAINER
+     ------------------------------------------------------- */
+
+  .patients__container {
+    width: 100%;
+    max-width: 834px;
+
+    margin-inline: auto;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -------------------------------------------------------
+     HEADING
+     ------------------------------------------------------- */
+
+  .patients__heading {
+    width: auto;
+
+    margin:
+      0
+      48px
+      24px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+
+  .patients__eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  .patients__title {
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    letter-spacing: -0.4px;
+  }
+
+
+  .patients__description {
+    width: 420px;
+    max-width: 100%;
+
+    margin: 8px 0 0;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     CAROUSEL VIEWPORT
+     ------------------------------------------------------- */
+
+  .patients__viewport {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    isolation: isolate;
+  }
+
+
+  /* -------------------------------------------------------
+     SOFT EDGE MASKS
+
+     Wider, gradual fade for a natural transition.
+     ------------------------------------------------------- */
+
+  .patients__viewport::before,
+  .patients__viewport::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 96px;
+
+    z-index: 10;
+
+    pointer-events: none;
+  }
+
+
+  /* LEFT */
+
+  .patients__viewport::before {
+    left: 0;
+
+    background: linear-gradient(
+      90deg,
+      #faf8f3 0%,
+      rgba(250, 248, 243, 0.98) 12%,
+      rgba(250, 248, 243, 0.90) 28%,
+      rgba(250, 248, 243, 0.68) 48%,
+      rgba(250, 248, 243, 0.38) 68%,
+      rgba(250, 248, 243, 0.14) 84%,
+      rgba(250, 248, 243, 0) 100%
+    );
+  }
+
+
+  /* RIGHT */
+
+  .patients__viewport::after {
+    right: 0;
+
+    background: linear-gradient(
+      270deg,
+      #faf8f3 0%,
+      rgba(250, 248, 243, 0.98) 12%,
+      rgba(250, 248, 243, 0.90) 28%,
+      rgba(250, 248, 243, 0.68) 48%,
+      rgba(250, 248, 243, 0.38) 68%,
+      rgba(250, 248, 243, 0.14) 84%,
+      rgba(250, 248, 243, 0) 100%
+    );
+  }
+
+
+  /* -------------------------------------------------------
+     TRACK
+     ------------------------------------------------------- */
+
+  .patients__track {
+    display: flex;
+
+    width: max-content;
+
+    gap: 24px;
+
+    animation:
+      patients-marquee-tablet
+      54s
+      linear
+      infinite;
+
+    will-change: transform;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET CARD
+     ------------------------------------------------------- */
+
+  .patient-case {
+    display: flex;
+
+    width: 318px;
+    height: 486px;
+
+    flex: 0 0 318px;
+
+    padding: 16px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #bec2c0;
+    border-radius: 16px;
+
+    background: #f2ebdf;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET TITLE
+     ------------------------------------------------------- */
+
+  .patient-case__title--desktop {
+    display: none;
+  }
+
+
+  .patient-case__title--tablet {
+    display: block;
+
+    width: 286px;
+    height: 26px;
+    min-height: 26px;
+
+    margin: 0;
+
+    color: #123f35;
+
+    font-family: "Instrument Sans", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+
+    letter-spacing: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET IMAGE
+     286 × 194
+     ------------------------------------------------------- */
+
+  .patient-case__image {
+    position: relative;
+
+    width: 286px;
+    height: 194px;
+
+    flex: 0 0 194px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+  }
+
+
+  .patient-case__image picture {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .patient-case__image img {
+    display: block;
+
+    width: 286px;
+    height: 194px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET TAG
+     ------------------------------------------------------- */
+
+  .patient-case__tag {
+    position: absolute;
+
+    right: 8px;
+    bottom: 8px;
+
+    z-index: 3;
+  }
+}
+
+
+/* =========================================================
+   TABLET MARQUEE
+   ========================================================= */
+
+@keyframes patients-marquee-tablet {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-2052px);
+  }
+}
+/* =========================================================
+   MOBILE REAL PATIENTS
+   < 768px
+
+   Carousel inherited from tablet.
+   Content → carousel gap = 24px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .patients {
+    padding:
+      48px
+      0
+      48px;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
+     ------------------------------------------------------- */
+
+  .patients__heading {
+    width: auto;
+
+    margin:
+      0
+      24px
+      24px;
+
+    gap: 12px;
+
+    align-items: flex-start;
+  }
+
+
+  .patients__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .patients__title {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    letter-spacing: -0.4px;
+  }
+
+
+  .patients__description {
+    width: 100%;
+    max-width: 392px;
+
+    margin:
+      8px
+      0
+      0;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     CAROUSEL
+     ------------------------------------------------------- */
+
+  .patients__viewport {
+    width: 100%;
+  }
+
+
+  .patients__track {
+    gap: 24px;
+
+    animation:
+      patients-marquee-tablet
+      54s
+      linear
+      infinite;
+  }
+}

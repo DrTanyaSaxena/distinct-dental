@@ -1,0 +1,743 @@
+/* =========================================================
+   DISTINCT DENTAL — CONSULTATION CTA
+   ========================================================= */
+
+.consultation-cta {
+  width: 100%;
+
+  padding: 96px 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.consultation-cta__container {
+  position: relative;
+
+  width: 1280px;
+  max-width: 1280px;
+  height: 424px;
+
+  margin-inline: auto;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  border-radius: 16px;
+
+  background: #0b2923;
+}
+
+
+/* =========================================================
+   PICTURE
+   ========================================================= */
+
+.consultation-cta__picture {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  display: block;
+
+  width: 632px;
+  height: 424px;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.consultation-cta__image {
+  display: block;
+
+  width: 632px;
+  height: 424px;
+
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: cover;
+  object-position: center;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   GRADIENT — DESKTOP
+   LOCKED
+   ========================================================= */
+
+.consultation-cta__gradient {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 1021px;
+  height: 424px;
+
+  background: linear-gradient(
+    90deg,
+    #0b2923 0%,
+    #0b2923 66%,
+    rgba(11, 41, 35, 0) 89%
+  );
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.consultation-cta__content {
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+
+  width: 640px;
+  height: 100%;
+
+  padding: 80px;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.consultation-cta__eyebrow {
+  display: block;
+
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.consultation-cta__title {
+  width: 520px;
+
+  margin: 12px 0 0;
+
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.consultation-cta__description {
+  width: 520px;
+
+  margin: 16px 0 0;
+
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.consultation-cta__content > .button {
+  margin-top: 24px;
+}
+
+
+/* =========================================================
+   CALENDAR ICON
+   ========================================================= */
+
+.consultation-cta__calendar-icon {
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+
+  background-color: currentColor;
+
+  -webkit-mask-image:
+    url("/images/calendar-outline.svg");
+
+  mask-image:
+    url("/images/calendar-outline.svg");
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+
+/* =========================================================
+   DESKTOP
+   1200px – 1599px
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  .consultation-cta__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   1600px+
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+  .consultation-cta__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .consultation-cta {
+    width: 100%;
+
+    padding:
+      64px
+      48px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+  }
+
+
+  .consultation-cta__container {
+    position: relative;
+
+    width: 100%;
+    max-width: 738px;
+    height: 386px;
+
+    margin-inline: auto;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    background: #0b2923;
+  }
+
+
+  .consultation-cta__picture {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 386px;
+    height: 386px;
+
+    z-index: 1;
+  }
+
+
+  .consultation-cta__image {
+    display: block;
+
+    width: 386px;
+    height: 386px;
+
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET GRADIENT
+     LOCKED
+     599 × 386
+     ------------------------------------------------------- */
+
+  .consultation-cta__gradient {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 599px;
+    height: 386px;
+
+    background: linear-gradient(
+      90deg,
+      #0b2923 0%,
+      #0b2923 66%,
+      rgba(11, 41, 35, 0) 89%
+    );
+
+    pointer-events: none;
+
+    z-index: 2;
+  }
+
+
+  .consultation-cta__content {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    width: 440px;
+    height: 386px;
+
+    padding: 48px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    box-sizing: border-box;
+  }
+
+
+  .consultation-cta__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .consultation-cta__title {
+    width: 344px;
+    max-width: 100%;
+
+    margin:
+      10px
+      0
+      0;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    letter-spacing: -0.4px;
+  }
+
+
+  .consultation-cta__description {
+    width: 330px;
+    max-width: 100%;
+
+    margin:
+      12px
+      0
+      0;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+  .consultation-cta__content > .button {
+    margin-top: 20px;
+  }
+
+
+  .consultation-cta__calendar-icon {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   MOBILE ONLY
+
+   Viewport:       440px
+   Side margins:    24px
+   Card width:     392px
+   Card height:    689px
+
+   Bottom of content/button:
+   32px above card bottom
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* -------------------------------------------------------
+     SECTION
+     ------------------------------------------------------- */
+
+  .consultation-cta {
+    width: 100%;
+
+    padding:
+      48px
+      24px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+  }
+
+
+  /* -------------------------------------------------------
+     CARD
+     ------------------------------------------------------- */
+
+  .consultation-cta__container {
+    position: relative;
+
+    width: 100%;
+    max-width: 392px;
+
+    height: 689px;
+    min-height: 689px;
+
+    margin-inline: auto;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    background: #0b2923;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE IMAGE
+
+     BAMob.jpg
+     392 × 344
+     ------------------------------------------------------- */
+
+  .consultation-cta__picture {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: auto;
+
+    display: block;
+
+    width: 100%;
+    height: 344px;
+
+    z-index: 1;
+
+    overflow: hidden;
+  }
+
+
+  .consultation-cta__image {
+    display: block;
+
+    width: 100%;
+    height: 344px;
+
+    max-width: none;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE GRADIENT
+
+     Covers the image and continues slightly below it so
+     there is no visible image/background seam.
+     ------------------------------------------------------- */
+
+  .consultation-cta__gradient {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 392px;
+
+    background: linear-gradient(
+      180deg,
+
+      rgba(11, 41, 35, 0) 0%,
+      rgba(11, 41, 35, 0) 28%,
+
+      rgba(11, 41, 35, 0.05) 38%,
+
+      rgba(11, 41, 35, 0.16) 48%,
+
+      rgba(11, 41, 35, 0.34) 58%,
+
+      rgba(11, 41, 35, 0.58) 68%,
+
+      rgba(11, 41, 35, 0.82) 78%,
+
+      #0b2923 88%,
+      #0b2923 100%
+    );
+
+    pointer-events: none;
+
+    z-index: 2;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
+
+     IMPORTANT:
+     Content is anchored from the BOTTOM.
+
+     The bottom of the appointment button sits exactly
+     32px above the bottom edge of the card.
+     ------------------------------------------------------- */
+
+  .consultation-cta__content {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 32px;
+
+    z-index: 3;
+
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+
+    padding:
+      0
+      24px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -------------------------------------------------------
+     EYEBROW
+     ------------------------------------------------------- */
+
+  .consultation-cta__eyebrow {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Instrument Sans", sans-serif;
+
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  /* -------------------------------------------------------
+     TITLE
+     ------------------------------------------------------- */
+
+  .consultation-cta__title {
+    width: 100%;
+
+    margin:
+      16px
+      0
+      0;
+
+    color: #ffffff;
+
+    font-family: "Instrument Sans", sans-serif;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  /* -------------------------------------------------------
+     DESCRIPTION
+     ------------------------------------------------------- */
+
+  .consultation-cta__description {
+    width: 100%;
+
+    margin:
+      24px
+      0
+      0;
+
+    color: #ffffff;
+
+    font-family: "Instrument Sans", sans-serif;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    letter-spacing: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE BUTTON
+
+     Match other site buttons:
+     40px height
+     20px horizontal padding
+     8px icon/text gap
+     8px radius
+     ------------------------------------------------------- */
+
+  .consultation-cta__content > .button {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: 40px !important;
+    min-height: 40px !important;
+
+    margin-top: 24px;
+
+    padding:
+      0
+      20px !important;
+
+    gap: 8px !important;
+
+    align-self: flex-start;
+
+    box-sizing: border-box;
+
+    border-radius: 8px !important;
+
+    font-family: "Instrument Sans", sans-serif !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 21px !important;
+
+    white-space: nowrap;
+  }
+
+
+  /* -------------------------------------------------------
+     CALENDAR ICON
+     ------------------------------------------------------- */
+
+  .consultation-cta__calendar-icon {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+  }
+}

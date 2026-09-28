@@ -1,0 +1,698 @@
+/* =========================================================
+   DISTINCT DENTAL — TREATMENTS
+   ========================================================= */
+
+.treatments {
+  width: 100%;
+
+  padding-top: 152px;
+  padding-bottom: 96px;
+
+  background: var(--background-primary);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.treatments__container {
+  width: min(100%, 1280px);
+
+  margin-inline: auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.treatments__content {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 48px;
+
+  align-self: stretch;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.treatments__intro {
+  display: flex;
+
+  width: 100%;
+  height: 136px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  align-self: stretch;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.treatments__eyebrow {
+  color: #a67c3d;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TITLE ROW
+   ========================================================= */
+
+.treatments__title-row {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  align-self: stretch;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.treatments__title {
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   VIEW ALL
+   ========================================================= */
+
+.treatments__view-all {
+  display: flex;
+
+  height: 32px;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+}
+
+
+.treatments__view-all-icon {
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.treatments__grid {
+  display: grid;
+
+  width: 100%;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  grid-template-rows:
+    repeat(2, auto);
+
+  overflow: hidden;
+
+  border: 1px solid #1b5144;
+  border-radius: 16px;
+
+  background: #f2f6f4;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.treatment-card {
+  display: flex;
+
+  min-width: 0;
+
+  padding: 24px;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  background: transparent;
+}
+
+
+/* =========================================================
+   DESKTOP INTERNAL BORDERS
+   ========================================================= */
+
+.treatment-card:nth-child(1),
+.treatment-card:nth-child(2),
+.treatment-card:nth-child(4),
+.treatment-card:nth-child(5) {
+  border-right: 1px solid #1b5144;
+}
+
+
+.treatment-card:nth-child(1),
+.treatment-card:nth-child(2),
+.treatment-card:nth-child(3) {
+  border-bottom: 1px solid #1b5144;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.treatment-card__icon {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  flex: 0 0 32px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.treatment-card__content {
+  display: flex;
+
+  flex: 1;
+
+  min-width: 0;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.treatment-card__title {
+  margin: 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.treatment-card__description {
+  margin: 0;
+
+  color: #505653;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.treatments__view-all:focus-visible {
+  outline: 2px solid #1b5144;
+
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   DESKTOP
+   >= 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .treatments {
+    padding-top: 152px;
+    padding-bottom: 96px;
+  }
+
+  .treatments__container {
+    width: min(100%, 1280px);
+  }
+
+  .treatments__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    grid-template-rows:
+      repeat(2, auto);
+  }
+
+  .treatment-card {
+    padding: 24px;
+
+    gap: 16px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   Existing tablet layout preserved.
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .treatments {
+    padding:
+      112px
+      48px
+      80px;
+  }
+
+
+  .treatments__container {
+    width: 100%;
+    max-width: none;
+  }
+
+
+  .treatments__content {
+    gap: 40px;
+  }
+
+
+  .treatments__intro {
+    height: auto;
+
+    gap: 12px;
+  }
+
+
+  .treatments__title-row {
+    align-items: flex-start;
+  }
+
+
+  .treatments__title {
+    font-size: 36px;
+    line-height: 43px;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .treatments__view-all {
+    height: 28px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  .treatments__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    grid-template-rows:
+      repeat(3, auto);
+  }
+
+
+  .treatments__grid .treatment-card {
+    border: 0;
+
+    border-radius: 0;
+
+    padding: 24px;
+  }
+
+
+  .treatments__grid .treatment-card:nth-child(1),
+  .treatments__grid .treatment-card:nth-child(3),
+  .treatments__grid .treatment-card:nth-child(5) {
+    border-right: 1px solid #1b5144;
+  }
+
+
+  .treatments__grid .treatment-card:nth-child(1),
+  .treatments__grid .treatment-card:nth-child(2),
+  .treatments__grid .treatment-card:nth-child(3),
+  .treatments__grid .treatment-card:nth-child(4) {
+    border-bottom: 1px solid #1b5144;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   Mobile Figma:
+   - 24px page inset
+   - single column
+   - six cards
+   - compact card rows
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* -------------------------------------------------------
+     SECTION
+     ------------------------------------------------------- */
+
+  .treatments {
+    width: 100%;
+
+    padding:
+      48px
+      24px
+      64px;
+
+    box-sizing: border-box;
+
+    background: var(--background-primary);
+  }
+
+
+  .treatments__container {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+  }
+
+
+  .treatments__content {
+    width: 100%;
+
+    gap: 24px;
+  }
+
+
+  /* -------------------------------------------------------
+     INTRO
+     ------------------------------------------------------- */
+
+  .treatments__intro {
+    width: 100%;
+    height: auto;
+
+    gap: 8px;
+  }
+
+
+  .treatments__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .treatments__title-row {
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 16px;
+  }
+
+
+  .treatments__title {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+
+    letter-spacing: -0.35px;
+  }
+
+
+  .treatments__view-all {
+    display: inline-flex;
+
+    width: auto;
+    height: 21px;
+
+    gap: 6px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  .treatments__view-all-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE GRID
+
+     Only the first six treatment cards belong in the
+     mobile Home treatment section.
+     ------------------------------------------------------- */
+
+  .treatments__grid {
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows:
+      repeat(6, auto);
+
+    overflow: hidden;
+
+    border: 1px solid #1b5144;
+
+    border-radius: 12px;
+
+    background: #f2f6f4;
+  }
+
+
+  /* -------------------------------------------------------
+     HIDE CARDS 7–18 ON MOBILE
+
+     Desktop/tablet retain all cards exactly as before.
+     ------------------------------------------------------- */
+
+  .treatments__grid .treatment-card:nth-child(n + 7) {
+    display: none;
+  }
+
+
+  /* -------------------------------------------------------
+     RESET ALL DESKTOP/TABLET BORDERS
+     ------------------------------------------------------- */
+
+  .treatments__grid .treatment-card {
+    display: flex;
+
+    width: 100%;
+
+    min-width: 0;
+    min-height: 104px;
+
+    margin: 0;
+
+    padding:
+      16px
+      16px;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    box-sizing: border-box;
+
+    border: 0;
+
+    border-right: 0;
+    border-bottom: 0;
+
+    border-radius: 0;
+
+    background: transparent;
+  }
+
+
+  /* -------------------------------------------------------
+     ROW DIVIDERS
+     ------------------------------------------------------- */
+
+  .treatments__grid
+  .treatment-card:nth-child(1),
+  .treatments__grid
+  .treatment-card:nth-child(2),
+  .treatments__grid
+  .treatment-card:nth-child(3),
+  .treatments__grid
+  .treatment-card:nth-child(4),
+  .treatments__grid
+  .treatment-card:nth-child(5) {
+    border-bottom: 1px solid #1b5144;
+  }
+
+
+  /* -------------------------------------------------------
+     ICON
+     ------------------------------------------------------- */
+
+  .treatment-card__icon {
+    width: 32px;
+    height: 32px;
+
+    min-width: 32px;
+    min-height: 32px;
+
+    flex: 0 0 32px;
+
+    object-fit: contain;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
+     ------------------------------------------------------- */
+
+  .treatment-card__content {
+    display: flex;
+
+    min-width: 0;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+
+  /* -------------------------------------------------------
+     TITLE
+     ------------------------------------------------------- */
+
+  .treatment-card__title {
+    width: 100%;
+
+    margin: 0;
+
+    color: #123f35;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+
+    letter-spacing: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     DESCRIPTION
+     ------------------------------------------------------- */
+
+  .treatment-card__description {
+    width: 100%;
+
+    margin: 0;
+
+    color: #505653;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+
+    letter-spacing: 0;
+  }
+}

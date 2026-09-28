@@ -1,0 +1,910 @@
+/* =========================================================
+   DISTINCT DENTAL — HEADER
+   ========================================================= */
+
+.header {
+  position: sticky;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 80px;
+  min-height: 80px;
+
+  z-index: 1000;
+
+  box-sizing: border-box;
+
+  background: rgba(250, 248, 243, 0.6);
+
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(18, 63, 53, 0.06);
+}
+
+
+@supports not (backdrop-filter: blur(16px)) {
+  .header {
+    background: rgba(250, 248, 243, 0.94);
+  }
+}
+
+
+/* =========================================================
+   INNER
+   ========================================================= */
+
+.header__inner {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LOGOS
+   ========================================================= */
+
+.header__logo {
+  display: flex;
+
+  align-items: center;
+
+  flex: 0 0 auto;
+
+  text-decoration: none;
+}
+
+
+.header__logo img {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: none;
+
+  object-fit: contain;
+}
+
+
+.header__logo--desktop {
+  display: flex;
+}
+
+
+.header__logo--desktop img {
+  width: 240px;
+  height: 48px;
+}
+
+
+.header__logo--mobile {
+  display: none;
+}
+
+
+.header__logo--mobile img {
+  width: 32px;
+  height: 32px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.header__nav {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+
+.header__nav-link {
+  position: relative;
+
+  display: inline-flex;
+
+  height: 80px;
+
+  align-items: center;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+
+.header__nav-link::after {
+  position: absolute;
+
+  right: 0;
+  bottom: 14px;
+  left: 0;
+
+  height: 2px;
+
+  content: "";
+
+  background: #123f35;
+
+  opacity: 0;
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+
+.header__nav-link:hover::after,
+.header__nav-link--active::after,
+.header__nav-link[aria-current="page"]::after {
+  opacity: 1;
+
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.header__actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   APPOINTMENT BUTTON
+   ========================================================= */
+
+.header__appointment {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box;
+
+  border-radius: 8px !important;
+
+  font-family: "Instrument Sans", sans-serif !important;
+  font-weight: 600 !important;
+
+  white-space: nowrap;
+}
+
+
+.header__appointment-icon {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  flex: 0 0 18px;
+}
+
+
+.header__appointment-label--short {
+  display: none;
+}
+
+
+/* =========================================================
+   MENU BUTTON
+   ========================================================= */
+
+.header__menu-button {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #123f35;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #123f35;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  z-index: 1300;
+
+  flex-shrink: 0;
+
+  -webkit-tap-highlight-color: transparent;
+
+  touch-action: manipulation;
+}
+
+
+.header__menu-button svg {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.header__overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1100;
+
+  background: rgba(18, 63, 53, 0.24);
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 240ms ease,
+    visibility 240ms ease;
+
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+
+.header__overlay--open {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+
+/* =========================================================
+   PANEL
+   ========================================================= */
+
+.header__panel {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1200;
+
+  width: min(360px, calc(100vw - 24px));
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  background: #faf8f3;
+
+  box-shadow:
+    -12px 0 32px rgba(18, 63, 53, 0.12);
+
+  transform: translate3d(100%, 0, 0);
+
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  visibility: hidden;
+
+  pointer-events: none;
+}
+
+
+.header__panel--open {
+  transform: translate3d(0, 0, 0);
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+
+/* =========================================================
+   PANEL HEADER
+   ========================================================= */
+
+.header__panel-header {
+  display: flex;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header__panel-title {
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+
+.header__panel-close {
+  display: inline-flex;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #123f35;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #123f35;
+
+  cursor: pointer;
+
+  position: relative;
+
+  z-index: 2;
+
+  touch-action: manipulation;
+}
+
+
+.header__panel-close svg {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   PANEL NAV
+   ========================================================= */
+
+.header__panel-nav {
+  display: flex;
+
+  width: 100%;
+
+  margin-top: 40px;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.header__panel-link {
+  display: flex;
+
+  width: 100%;
+  min-height: 48px;
+
+  align-items: center;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+
+  text-decoration: none;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+.header__panel-link--active {
+  font-weight: 600;
+}
+
+
+.header__panel-cta {
+  width: 100%;
+
+  margin-top: 32px;
+}
+
+
+.header__panel-button {
+  width: 100%;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.header__logo:focus-visible,
+.header__nav-link:focus-visible,
+.header__menu-button:focus-visible,
+.header__panel-close:focus-visible,
+.header__panel-link:focus-visible {
+  outline: 2px solid #123f35;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   DESKTOP
+   >= 1200px
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .header {
+    height: 80px;
+    min-height: 80px;
+  }
+
+
+  .header__inner {
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+
+  .header__logo--desktop {
+    display: flex;
+  }
+
+
+  .header__logo--mobile {
+    display: none;
+  }
+
+
+  .header__nav {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+
+  .header__actions {
+    margin-left: auto;
+  }
+
+
+  .header__appointment {
+    width: auto !important;
+    min-width: 0 !important;
+
+    height: 40px !important;
+    min-height: 40px !important;
+
+    padding:
+      0
+      20px !important;
+
+    gap: 8px !important;
+
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+
+  .header__appointment-icon {
+    width: 16px;
+    height: 16px;
+
+    flex-basis: 16px;
+  }
+
+
+  .header__appointment-label--full {
+    display: inline;
+  }
+
+
+  .header__appointment-label--short {
+    display: none;
+  }
+
+
+  .header__menu-button {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   MENU FIX ONLY
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .header {
+    height: 80px;
+    min-height: 80px;
+
+    position: sticky;
+
+    z-index: 1000;
+  }
+
+
+  .header__inner {
+    width: 100%;
+
+    padding:
+      0
+      48px;
+  }
+
+
+  .header__logo--desktop {
+    display: flex;
+  }
+
+
+  .header__logo--mobile {
+    display: none;
+  }
+
+
+  .header__nav {
+    display: none;
+  }
+
+
+  .header__actions {
+    margin-left: auto;
+
+    gap: 12px;
+
+    position: relative;
+
+    z-index: 1300;
+  }
+
+
+  /* -------------------------------------------------------
+     APPOINTMENT BUTTON — LOCKED
+     ------------------------------------------------------- */
+
+  .header__appointment {
+    width: auto !important;
+    min-width: 0 !important;
+
+    height: 40px !important;
+    min-height: 40px !important;
+
+    padding:
+      0
+      20px !important;
+
+    gap: 8px !important;
+
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+
+  .header__appointment-icon {
+    width: 16px;
+    height: 16px;
+
+    flex-basis: 16px;
+  }
+
+
+  .header__appointment-label--full {
+    display: inline;
+  }
+
+
+  .header__appointment-label--short {
+    display: none;
+  }
+
+
+  /* -------------------------------------------------------
+     MENU BUTTON — FIX
+     ------------------------------------------------------- */
+
+  .header__menu-button {
+    display: inline-flex;
+
+    position: relative;
+
+    z-index: 1300;
+
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    border-radius: 8px;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+  }
+
+
+  .header__menu-button svg {
+    width: 18px;
+    height: 18px;
+
+    pointer-events: none;
+  }
+
+
+  /* -------------------------------------------------------
+     DRAWER — FIX
+     ------------------------------------------------------- */
+
+  .header__overlay {
+    z-index: 1100;
+  }
+
+
+  .header__panel {
+    z-index: 1200;
+
+    width: min(360px, calc(100vw - 24px));
+
+    visibility: hidden;
+
+    pointer-events: none;
+  }
+
+
+  .header__panel--open {
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   MENU FIX ONLY
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .header {
+    height: 64px;
+    min-height: 64px;
+
+    position: sticky;
+
+    z-index: 1000;
+  }
+
+
+  .header__inner {
+    width: 100%;
+
+    padding:
+      0
+      24px;
+  }
+
+
+  .header__logo--desktop {
+    display: none;
+  }
+
+
+  .header__logo--mobile {
+    display: flex;
+
+    width: 32px;
+    height: 32px;
+
+    flex: 0 0 32px;
+  }
+
+
+  .header__logo--mobile img {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .header__nav {
+    display: none;
+  }
+
+
+  .header__actions {
+    margin-left: auto;
+
+    gap: 12px;
+
+    position: relative;
+
+    z-index: 1300;
+  }
+
+
+  .header__appointment {
+    min-width: 179px;
+
+    height: 32px !important;
+    min-height: 32px !important;
+
+    padding:
+      0
+      16px !important;
+
+    gap: 6px !important;
+
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+
+  .header__appointment-icon {
+    width: 16px;
+    height: 16px;
+
+    flex-basis: 16px;
+  }
+
+
+  .header__appointment-label--full {
+    display: none;
+  }
+
+
+  .header__appointment-label--short {
+    display: inline;
+  }
+
+
+  /* -------------------------------------------------------
+     MENU BUTTON — FIX
+     ------------------------------------------------------- */
+
+  .header__menu-button {
+    display: inline-flex;
+
+    position: relative;
+
+    z-index: 1300;
+
+    width: 34px;
+    height: 32px;
+
+    flex: 0 0 34px;
+
+    border-radius: 8px;
+
+    pointer-events: auto;
+
+    cursor: pointer;
+  }
+
+
+  .header__menu-button svg {
+    width: 16px;
+    height: 16px;
+
+    pointer-events: none;
+  }
+
+
+  /* -------------------------------------------------------
+     PANEL
+     ------------------------------------------------------- */
+
+  .header__panel {
+    width: calc(100vw - 24px);
+
+    padding:
+      20px
+      24px;
+
+    z-index: 1200;
+
+    visibility: hidden;
+
+    pointer-events: none;
+  }
+
+
+  .header__panel--open {
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  .header__panel-close {
+    position: relative;
+
+    z-index: 2;
+
+    pointer-events: auto;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .header__nav-link::after,
+  .header__overlay,
+  .header__panel {
+    transition: none;
+  }
+}

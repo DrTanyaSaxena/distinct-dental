@@ -1,0 +1,243 @@
+:root {
+  /* =========================================================
+     DISTINCT DENTAL DESIGN SYSTEM
+     ========================================================= */
+
+  /* =========================================================
+     FONT FAMILIES
+     ========================================================= */
+
+  --font-family: "Instrument Sans", sans-serif;
+  --font-family-accent: "Caveat", cursive;
+
+
+  /* =========================================================
+     TYPOGRAPHY — SIZE
+     ========================================================= */
+
+  --font-size-1100: 64px;
+  --font-size-1000: 48px;
+  --font-size-900: 36px;
+  --font-size-800: 28px;
+  --font-size-700: 24px;
+  --font-size-600: 20px;
+  --font-size-500: 18px;
+  --font-size-400: 16px;
+  --font-size-300: 14px;
+  --font-size-200: 12px;
+
+
+  /* =========================================================
+     TYPOGRAPHY — LINE HEIGHT
+     ========================================================= */
+
+  --font-line-height-1100: 68px;
+  --font-line-height-1000: 54px;
+  --font-line-height-900: 43px;
+  --font-line-height-800: 36px;
+  --font-line-height-700: 31px;
+  --font-line-height-600: 26px;
+  --font-line-height-500: 26px;
+  --font-line-height-400: 26px;
+  --font-line-height-300: 21px;
+  --font-line-height-200: 16px;
+
+
+  /* =========================================================
+     TYPOGRAPHY — WEIGHT
+     ========================================================= */
+
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  --font-weight-display: 500;
+  --font-weight-heading: 500;
+  --font-weight-body: 400;
+  --font-weight-body-alt: 600;
+  --font-weight-label: 500;
+  --font-weight-eyebrow: 500;
+
+
+  /* =========================================================
+     TYPOGRAPHY — TRACKING
+     ========================================================= */
+
+  --font-tracking-tight-strong: -1.25px;
+  --font-tracking-tight: -0.5px;
+  --font-tracking-default: 0;
+  --font-tracking-wide: 0.5px;
+  --font-tracking-eyebrow: 1.5px;
+
+
+  /* =========================================================
+     SPACING
+     ========================================================= */
+
+  --spacing-100: 4px;
+  --spacing-200: 8px;
+  --spacing-300: 12px;
+  --spacing-400: 16px;
+  --spacing-500: 24px;
+  --spacing-600: 32px;
+  --spacing-700: 48px;
+  --spacing-800: 64px;
+  --spacing-900: 80px;
+  --spacing-1000: 96px;
+  --spacing-1100: 120px;
+
+
+  /* =========================================================
+     COMPONENT
+     ========================================================= */
+
+  --button-height: 40px;
+  --button-padding-x: 24px;
+  --button-gap: 4px;
+  --button-radius: 8px;
+
+
+  /* =========================================================
+     DESKTOP FRAME
+     ========================================================= */
+
+  --desktop-frame-max: 1436px;
+  --desktop-page-padding: 80px;
+
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+
+  --hero-height: 574px;
+
+  /*
+   * The latest Figma screenshot shows the updated 1728
+   * composition using a narrower image than the original
+   * 1440 version. These values are interpolated between
+   * the two desktop compositions.
+   */
+  --hero-image-1440: 861px;
+  --hero-image-1728: 732px;
+
+  --hero-content-1440: 390px;
+  --hero-content-1728: 430px;
+
+
+  /* =========================================================
+     SECTION GAPS
+     ========================================================= */
+
+  --section-gap-compact: 64px;
+  --section-gap-default: 96px;
+  --section-gap-large: 120px;
+
+
+  /* =========================================================
+     GREEN
+     ========================================================= */
+
+  --green-950: #0b2923;
+  --green-900: #123f35;
+  --green-800: #1b5144;
+  --green-700: #286557;
+  --green-500: #5e8c7c;
+  --green-300: #a8c3ba;
+  --green-200: #c9dad4;
+  --green-100: #e5eeeb;
+  --green-50: #f2f6f4;
+
+
+  /* =========================================================
+     NEUTRAL
+     ========================================================= */
+
+  --neutral-950: #171a19;
+  --neutral-900: #242826;
+  --neutral-700: #505653;
+  --neutral-500: #7c827f;
+  --neutral-300: #bec2c0;
+  --neutral-200: #d9dcda;
+  --neutral-100: #eceeed;
+  --neutral-50: #f6f7f6;
+
+
+  /* =========================================================
+     WARM
+     ========================================================= */
+
+  --warm-300: #d8c6a8;
+  --warm-200: #e8ddcb;
+  --warm-100: #f2ebdf;
+  --warm-50: #faf8f3;
+
+
+  /* =========================================================
+     GOLD
+     ========================================================= */
+
+  --gold-600: #a67c3d;
+  --gold-500: #c29a5b;
+  --gold-100: #f3e8d5;
+
+
+  /* =========================================================
+     SEMANTIC — BACKGROUND
+     ========================================================= */
+
+  --background-primary: var(--warm-50);
+  --background-secondary: var(--green-50);
+  --background-tertiary: var(--warm-100);
+  --background-inverse: var(--green-950);
+
+
+  /* =========================================================
+     SEMANTIC — SURFACE
+     ========================================================= */
+
+  --surface-primary: #ffffff;
+  --surface-secondary: var(--warm-50);
+  --surface-brand: var(--green-900);
+  --surface-subtle: var(--green-50);
+
+
+  /* =========================================================
+     SEMANTIC — TEXT
+     ========================================================= */
+
+  --text-primary: var(--neutral-950);
+  --text-secondary: var(--neutral-700);
+  --text-tertiary: var(--neutral-500);
+  --text-brand: var(--green-900);
+  --text-inverse: #ffffff;
+  --text-accent: var(--gold-600);
+
+
+  /* =========================================================
+     SEMANTIC — BORDER
+     ========================================================= */
+
+  --border-subtle: var(--neutral-100);
+  --border-default: var(--neutral-200);
+  --border-strong: var(--neutral-300);
+  --border-brand: var(--green-800);
+
+
+  /* =========================================================
+     ACTION — PRIMARY
+     ========================================================= */
+
+  --action-primary-default: var(--green-900);
+  --action-primary-hover: var(--green-800);
+  --action-primary-pressed: var(--green-950);
+  --action-primary-disabled: var(--neutral-200);
+
+
+  /* =========================================================
+     ACTION — SECONDARY
+     ========================================================= */
+
+  --action-secondary-default: var(--green-50);
+  --action-secondary-hover: var(--green-50);
+  --action-secondary-pressed: var(--green-100);
+}

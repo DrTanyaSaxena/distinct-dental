@@ -1,0 +1,474 @@
+/* =========================================================
+   DISTINCT DENTAL — ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.about-page__main {
+  width: 100%;
+}
+
+
+/* =========================================================
+   ABOUT INTRODUCTION
+   ========================================================= */
+
+.about-intro {
+  width: 100%;
+
+  padding: 96px 0;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-intro__container {
+  display: flex;
+
+  width: 1280px;
+  max-width: 1280px;
+
+  margin-inline: auto;
+
+  align-items: center;
+
+  gap: 48px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+
+   DESKTOP — LOCKED
+   628 × 752px
+   ========================================================= */
+
+.about-intro__image-wrap {
+  position: relative;
+
+  width: 628px;
+  height: 752px;
+
+  flex: 0 0 628px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.about-intro__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.about-intro__content {
+  display: flex;
+
+  width: 604px;
+
+  flex: 0 0 604px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.about-intro__eyebrow {
+  display: block;
+
+  color: #a67c3d;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.about-intro__title {
+  width: 100%;
+
+  margin: 14px 0 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 68px;
+
+  letter-spacing: -1.25px;
+}
+
+
+/* =========================================================
+   DEGREE
+   ========================================================= */
+
+.about-intro__degree {
+  margin: 12px 0 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+
+  letter-spacing: -0.25px;
+}
+
+
+/* =========================================================
+   SPECIALITY
+   ========================================================= */
+
+.about-intro__speciality {
+  margin: 4px 0 0;
+
+  color: #123f35;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   BODY COPY
+   ========================================================= */
+
+.about-intro__body {
+  display: flex;
+
+  width: 604px;
+
+  margin-top: 28px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+
+.about-intro__body p {
+  width: 604px;
+
+  margin: 0;
+
+  color: #171a19;
+
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DESKTOP — 1200px to 1599px
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  .about-intro__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP — 1600px+
+
+   LOCKED
+   ========================================================= */
+
+@media (min-width: 1600px) {
+
+  .about-intro__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   PHOTO:
+   - 1:1
+   - contained
+   - centered
+   - not edge-to-edge
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .about-intro {
+    padding:
+      64px
+      48px;
+  }
+
+
+  .about-intro__container {
+    width: 100%;
+    max-width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 48px;
+  }
+
+
+  .about-intro__image-wrap {
+    position: relative;
+
+    width: min(100%, 560px);
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    flex: 0 0 auto;
+
+    margin-inline: auto;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+  }
+
+
+  .about-intro__image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 35%;
+  }
+
+
+  .about-intro__content {
+    width: 100%;
+
+    flex: none;
+  }
+
+
+  .about-intro__body,
+  .about-intro__body p {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   PHOTO:
+   - full available width
+   - 1:1
+   - no stretching
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .about-intro {
+    width: 100%;
+
+    padding:
+      48px
+      20px;
+  }
+
+
+  /* -------------------------------------------------------
+     IMPORTANT:
+     Explicitly switch the desktop row to a mobile column.
+     ------------------------------------------------------- */
+
+  .about-intro__container {
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 32px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE PHOTO
+     ------------------------------------------------------- */
+
+  .about-intro__image-wrap {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    flex: 0 0 auto;
+
+    margin-inline: 0;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+  }
+
+
+  .about-intro__image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 35%;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE CONTENT
+     ------------------------------------------------------- */
+
+  .about-intro__content {
+    width: 100%;
+
+    flex: none;
+  }
+
+
+  .about-intro__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .about-intro__title {
+    width: 100%;
+
+    margin-top: 14px;
+
+    font-size: 48px;
+    line-height: 54px;
+
+    letter-spacing: -0.7px;
+  }
+
+
+  .about-intro__degree {
+    margin-top: 10px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
+  .about-intro__speciality {
+    margin-top: 4px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  .about-intro__body {
+    width: 100%;
+
+    margin-top: 24px;
+
+    gap: 20px;
+  }
+
+
+  .about-intro__body p {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

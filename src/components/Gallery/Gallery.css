@@ -1,0 +1,681 @@
+/* =========================================================
+   DISTINCT DENTAL — GALLERY
+   ========================================================= */
+
+.gallery {
+  width: 100%;
+
+  background: #0b2923;
+
+  border-radius: 24px 24px 0 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.gallery__container {
+  display: flex;
+
+  width: 1280px;
+  max-width: 1280px;
+
+  min-height: 606px;
+
+  margin-inline: auto;
+
+  padding: 96px 0;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.gallery__content {
+  display: flex;
+
+  width: 519px;
+  flex: 0 0 519px;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+
+.gallery__heading {
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+.gallery__eyebrow {
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+
+  letter-spacing: 1.5px;
+}
+
+
+.gallery__title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 54px;
+
+  letter-spacing: -0.5px;
+}
+
+
+.gallery__description {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   MEDIA
+   ========================================================= */
+
+.gallery__media {
+  position: relative;
+
+  width: 737px;
+  height: 414px;
+
+  flex: 0 0 737px;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   PHOTO WRAPPERS
+   ========================================================= */
+
+.gallery__photos {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+.gallery__photos--desktop {
+  display: block;
+}
+
+
+.gallery__photos--tablet {
+  display: none;
+}
+
+
+.gallery__photos--mobile {
+  display: none;
+}
+
+
+/* =========================================================
+   TRACK
+   ========================================================= */
+
+.gallery__track {
+  display: flex;
+
+  align-items: flex-start;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   DESKTOP IMAGE
+   ========================================================= */
+
+.gallery__photos--desktop .gallery__track {
+  width: max-content;
+  height: 100%;
+}
+
+
+.gallery__photos--desktop .gallery__photo {
+  display: block;
+
+  width: 737px;
+  height: 414px;
+
+  flex: 0 0 737px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   CONTROLS
+   ========================================================= */
+
+.gallery__controls {
+  position: absolute;
+
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+
+  display: flex;
+
+  width: calc(100% - 48px);
+
+  justify-content: space-between;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+
+.gallery__navigation {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  pointer-events: auto;
+}
+
+
+.gallery__counter {
+  display: flex;
+
+  padding: 8px 12px;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  border-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  color: #ffffff;
+
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  pointer-events: auto;
+}
+
+
+/* =========================================================
+   DESKTOP
+   >= 1200px
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .gallery__container {
+    width: 1280px;
+    max-width: 1280px;
+  }
+
+
+  .gallery__media {
+    width: 737px;
+    height: 414px;
+
+    flex-basis: 737px;
+  }
+
+
+  .gallery__photos--desktop {
+    display: block;
+  }
+
+
+  .gallery__photos--tablet,
+  .gallery__photos--mobile {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px – 1199px
+
+   Tablet:
+   clinic-01 tab.jpg
+   clinic-02 tab.jpg
+   clinic-03 tab.jpg
+   clinic-04 tab.jpg
+   clinic-05 tab.jpg
+   clinic-06tab.jpg
+
+   Frame:
+   738 × 415
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .gallery {
+    border-radius: 24px 24px 0 0;
+  }
+
+
+  .gallery__container {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: auto;
+
+    margin: 0;
+
+    padding:
+      48px
+      48px
+      56px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 24px;
+  }
+
+
+  .gallery__content {
+    width: 100%;
+
+    flex: none;
+
+    gap: 20px;
+  }
+
+
+  .gallery__heading {
+    gap: 8px;
+  }
+
+
+  .gallery__eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+  .gallery__title {
+    max-width: 560px;
+
+    font-size: 36px;
+    line-height: 43px;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .gallery__description {
+    max-width: 650px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  /* -------------------------------------------------------
+     TABLET MEDIA
+     ------------------------------------------------------- */
+
+  .gallery__media {
+    width: 100%;
+    max-width: 738px;
+
+    height: 415px;
+
+    flex: 0 0 415px;
+
+    margin-inline: auto;
+
+    border-radius: 16px;
+  }
+
+
+  .gallery__photos--desktop,
+  .gallery__photos--mobile {
+    display: none;
+  }
+
+
+  .gallery__photos--tablet {
+    display: block;
+  }
+
+
+  .gallery__photos--tablet .gallery__track {
+    width: max-content;
+    height: 415px;
+
+    align-items: flex-start;
+  }
+
+
+  .gallery__photos--tablet .gallery__photo {
+    display: block;
+
+    width: 738px;
+    height: 415px;
+
+    flex: 0 0 738px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  .gallery__controls {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+
+    width: calc(100% - 32px);
+  }
+
+
+  .gallery__counter {
+    padding: 6px 10px;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   < 768px
+
+   Mobile:
+   clinic-01 mob.jpg
+   clinic-02 mob.jpg
+   clinic-03 mob.jpg
+   clinic-04 mob.jpg
+   clinic-05 mob.jpg
+   clinic-06 mob.jpg
+
+   IMPORTANT:
+   The mobile track is explicitly 700% wide.
+   Each of the 7 slides is exactly 1/7 of the track.
+   This prevents the image from being oversized/cropped.
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .gallery {
+    width: 100%;
+
+    border-radius: 16px 16px 0 0;
+
+    background: #0b2923;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTAINER
+     ------------------------------------------------------- */
+
+  .gallery__container {
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 0;
+
+    margin: 0;
+
+    padding:
+      40px
+      24px
+      40px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 24px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
+     ------------------------------------------------------- */
+
+  .gallery__content {
+    width: 100%;
+
+    flex: none;
+
+    gap: 16px;
+  }
+
+
+  .gallery__heading {
+    gap: 8px;
+  }
+
+
+  .gallery__eyebrow {
+    font-size: 11px;
+    line-height: 15px;
+
+    letter-spacing: 1.4px;
+  }
+
+
+  .gallery__title {
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    letter-spacing: -0.35px;
+  }
+
+
+  .gallery__description {
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE MEDIA
+
+     No forced 16:9 sizing.
+     The image establishes its natural height.
+     ------------------------------------------------------- */
+
+  .gallery__media {
+    position: relative;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    flex: none;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE IMAGE WRAPPER
+     ------------------------------------------------------- */
+
+  .gallery__photos--desktop,
+  .gallery__photos--tablet {
+    display: none;
+  }
+
+
+  .gallery__photos--mobile {
+    position: relative;
+
+    display: block;
+
+    inset: auto;
+
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE TRACK
+
+     7 slides total:
+       6 real
+       1 duplicate
+
+     Therefore:
+       track = 700% of viewport
+
+     Each slide = 1/7 of track = viewport width.
+     ------------------------------------------------------- */
+
+  .gallery__photos--mobile .gallery__track {
+    display: flex;
+
+    width: 700%;
+    height: auto;
+
+    align-items: flex-start;
+
+    will-change: transform;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE SLIDES
+
+     Each slide is exactly one viewport wide.
+     ------------------------------------------------------- */
+
+  .gallery__photos--mobile .gallery__photo {
+    display: block;
+
+    width: calc(100% / 7);
+    height: auto;
+
+    max-width: none;
+
+    flex: 0 0 calc(100% / 7);
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+    object-position: center;
+
+    align-self: flex-start;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTROLS
+     ------------------------------------------------------- */
+
+  .gallery__controls {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    width: calc(100% - 24px);
+
+    align-items: flex-end;
+  }
+
+
+  .gallery__navigation {
+    gap: 8px;
+  }
+
+
+  .gallery__counter {
+    padding:
+      8px
+      10px;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
