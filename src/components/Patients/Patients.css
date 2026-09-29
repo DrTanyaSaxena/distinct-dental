@@ -699,12 +699,15 @@
     transform: translateX(-2052px);
   }
 }
+
 /* =========================================================
    MOBILE REAL PATIENTS
    < 768px
 
-   Carousel inherited from tablet.
-   Content → carousel gap = 24px
+   ONLY FIX:
+   Content has 24px left + right padding.
+
+   Carousel remains unchanged.
    ========================================================= */
 
 @media (max-width: 767px) {
@@ -719,15 +722,22 @@
 
   /* -------------------------------------------------------
      CONTENT
+     24px LEFT + RIGHT PADDING
      ------------------------------------------------------- */
 
   .patients__heading {
-    width: auto;
+    width: 100%;
 
     margin:
       0
-      24px
+      0
       24px;
+
+    padding:
+      0
+      24px;
+
+    box-sizing: border-box;
 
     gap: 12px;
 
@@ -736,6 +746,8 @@
 
 
   .patients__eyebrow {
+    width: 100%;
+
     font-size: 11px;
     line-height: 15px;
 
@@ -745,6 +757,7 @@
 
   .patients__title {
     width: 100%;
+    max-width: 100%;
 
     margin: 0;
 
@@ -757,7 +770,7 @@
 
   .patients__description {
     width: 100%;
-    max-width: 392px;
+    max-width: 100%;
 
     margin:
       8px
@@ -771,6 +784,7 @@
 
   /* -------------------------------------------------------
      CAROUSEL
+     UNCHANGED — INHERITED FROM TABLET
      ------------------------------------------------------- */
 
   .patients__viewport {
