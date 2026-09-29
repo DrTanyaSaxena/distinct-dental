@@ -699,49 +699,75 @@
     transform: translateX(-2052px);
   }
 }
-
 /* =========================================================
    MOBILE REAL PATIENTS
    < 768px
 
-   ONLY FIX:
-   Content gets exactly 24px on BOTH sides.
-
-   Carousel remains unchanged.
+   ONLY MOBILE FIX:
+   - Container becomes viewport width
+   - Content gets 24px left/right inset
+   - 24px gap before carousel
+   - Carousel remains unchanged
    ========================================================= */
 
 @media (max-width: 767px) {
 
+  /* -------------------------------------------------------
+     SECTION
+     ------------------------------------------------------- */
+
   .patients {
+    width: 100%;
+
     padding:
       48px
       0
       48px;
+
+    box-sizing: border-box;
   }
 
 
   /* -------------------------------------------------------
-     CONTENT BLOCK
+     MOBILE CONTAINER
 
-     24px left + 24px right
+     IMPORTANT:
+     Reset the desktop 1280px width.
+     ------------------------------------------------------- */
+
+  .patients__container {
+    width: 100%;
+    max-width: 100%;
+
+    margin-inline: 0;
+
+    box-sizing: border-box;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTENT
      ------------------------------------------------------- */
 
   .patients__heading {
+    display: flex;
+
     width: calc(100% - 48px);
     max-width: calc(100% - 48px);
 
     margin:
       0
-      auto
+      24px
       24px;
 
     padding: 0;
 
     box-sizing: border-box;
 
-    gap: 12px;
-
+    flex-direction: column;
     align-items: flex-start;
+
+    gap: 12px;
   }
 
 
@@ -750,6 +776,8 @@
      ------------------------------------------------------- */
 
   .patients__eyebrow {
+    display: block;
+
     width: 100%;
 
     margin: 0;
@@ -766,17 +794,19 @@
      ------------------------------------------------------- */
 
   .patients__title {
+    display: block;
+
     width: 100%;
     max-width: 100%;
 
     margin: 0;
 
+    box-sizing: border-box;
+
     font-size: 32px;
     line-height: 38px;
 
     letter-spacing: -0.4px;
-
-    box-sizing: border-box;
   }
 
 
@@ -785,6 +815,8 @@
      ------------------------------------------------------- */
 
   .patients__description {
+    display: block;
+
     width: 100%;
     max-width: 100%;
 
@@ -793,10 +825,10 @@
       0
       0;
 
+    box-sizing: border-box;
+
     font-size: 14px;
     line-height: 20px;
-
-    box-sizing: border-box;
   }
 
 
