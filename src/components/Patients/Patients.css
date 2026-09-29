@@ -705,7 +705,7 @@
    < 768px
 
    ONLY FIX:
-   Content has 24px left + right padding.
+   Content gets exactly 24px on BOTH sides.
 
    Carousel remains unchanged.
    ========================================================= */
@@ -721,21 +721,21 @@
 
 
   /* -------------------------------------------------------
-     CONTENT
-     24px LEFT + RIGHT PADDING
+     CONTENT BLOCK
+
+     24px left + 24px right
      ------------------------------------------------------- */
 
   .patients__heading {
-    width: 100%;
+    width: calc(100% - 48px);
+    max-width: calc(100% - 48px);
 
     margin:
       0
-      0
+      auto
       24px;
 
-    padding:
-      0
-      24px;
+    padding: 0;
 
     box-sizing: border-box;
 
@@ -745,8 +745,14 @@
   }
 
 
+  /* -------------------------------------------------------
+     EYEBROW
+     ------------------------------------------------------- */
+
   .patients__eyebrow {
     width: 100%;
+
+    margin: 0;
 
     font-size: 11px;
     line-height: 15px;
@@ -754,6 +760,10 @@
     letter-spacing: 1.4px;
   }
 
+
+  /* -------------------------------------------------------
+     TITLE
+     ------------------------------------------------------- */
 
   .patients__title {
     width: 100%;
@@ -765,8 +775,14 @@
     line-height: 38px;
 
     letter-spacing: -0.4px;
+
+    box-sizing: border-box;
   }
 
+
+  /* -------------------------------------------------------
+     DESCRIPTION
+     ------------------------------------------------------- */
 
   .patients__description {
     width: 100%;
@@ -779,12 +795,14 @@
 
     font-size: 14px;
     line-height: 20px;
+
+    box-sizing: border-box;
   }
 
 
   /* -------------------------------------------------------
      CAROUSEL
-     UNCHANGED — INHERITED FROM TABLET
+     UNCHANGED
      ------------------------------------------------------- */
 
   .patients__viewport {
