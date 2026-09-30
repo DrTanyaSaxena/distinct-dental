@@ -61,7 +61,7 @@ function Treatments() {
 
               <a
                 className="treatments__view-all"
-                href={`${baseUrl}treatment/`}
+                href={`${baseUrl}treatments/`}
               >
                 <span>View all treatments</span>
 
