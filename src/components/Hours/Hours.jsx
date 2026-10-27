@@ -10,9 +10,8 @@ import Button from "../Button/Button";
 const hours = [
   {
     day: "Monday",
-    first: "Closed",
-    second: "",
-    closed: true,
+    first: "10:00 AM – 2:00 PM",
+    second: "5:30 PM – 8:30 PM",
   },
   {
     day: "Tuesday",
@@ -26,8 +25,9 @@ const hours = [
   },
   {
     day: "Thursday",
-    first: "10:00 AM – 2:00 PM",
-    second: "5:30 PM – 8:30 PM",
+    first: "Closed",
+    second: "",
+    closed: true,
   },
   {
     day: "Friday",
